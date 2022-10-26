@@ -1,0 +1,33 @@
+.calculator{
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+   
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+}
+
+.button:active{
+    background-color: #ccc;
+}
+
+.button.double{
+    grid-column: span 2;
+}
+
+.button.triple{
+    grid-column: span 3;
+}
+
+.button.operation{
+    background-color: #fa8231;
+    color: white;
+}
+
+.button.operation:active{
+    background-color: #fa8231cc;
+}
